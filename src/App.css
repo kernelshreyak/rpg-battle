@@ -37,6 +37,22 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+.playerstats {
+  display: flex;
+  justify-content: space-evenly;
 }
+
+.player-statbox {
+  margin-right: 1rem;
+}
+.player-statbox >img  {
+  width: 30px;
+  height: 30px;
+}
+
+.playeroptions{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+}
+

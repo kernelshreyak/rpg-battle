@@ -9,8 +9,9 @@ function App() {
           marginBottom: 100
         }}>RPG Battle</h1>
         <Player />
-        <Player playerName='You' playerColor='green'/>
+        <Player playerName='You' />
     </div>
+    
   )
 }
 
