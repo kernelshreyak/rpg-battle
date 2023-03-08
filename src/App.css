@@ -37,6 +37,11 @@
   padding: 2em;
 }
 
+/* .playercard[data-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.7;
+} */
+
 .playerstats {
   display: flex;
   justify-content: space-evenly;
@@ -60,6 +65,11 @@
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+.inventory-item{
+ border: 1px solid black;
+ margin-bottom: 1rem;
 }
 
 .eventlogs{
