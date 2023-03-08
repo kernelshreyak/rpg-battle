@@ -31,7 +31,7 @@ function App() {
     const armourTypes = ['Shield','Helmet','Umbrella'];
     const potionTypes = ['Health Potion','Power Potion'];
     allItemsArr = [];
-    for (let i = 0;i < 50;i++) {
+    for (let i = 0;i < 100;i++) {
       const itemType = utils.getRandomArrayItem(itemTypes);
       let itemName = "";
       let attackPower = 0;
@@ -89,6 +89,8 @@ function App() {
       player.hp += item.hpBoost;
       player.mp += item.magicPower;
       player.playerId == 1 ? setPlayer1({...player}) : setPlayer2({...player})
+      
+      player.playerId == 1 ? setPlayerTurn(2) : setPlayerTurn(1)
     }
     else if (event == "remove-item") {
       const item = {...itemUsed};
@@ -122,9 +124,9 @@ function App() {
         setPlayer1(opponent);
         setPlayer2(attacker);
       }
-    }
 
-    player.playerId == 1 ? setPlayerTurn(2) : setPlayerTurn(1)
+      player.playerId == 1 ? setPlayerTurn(2) : setPlayerTurn(1)
+    }
   }
 
   function getItemDropRandom(): InventoryItem  {
