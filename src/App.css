@@ -56,3 +56,13 @@
   justify-content: space-evenly;
 }
 
+.inventory{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventlogs{
+  overflow-y: scroll;
+  max-height: 100px;
+}
